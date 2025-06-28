@@ -152,7 +152,7 @@ export function TeamSection() {
       },
     },
     {
-      name: "Patrick",
+      name: "Kennedy",
       role: "Fleet Manager & Bike Care Specialist",
       image: "/bike handler.JPG",
       bio: "Dedicated mobility expert who ensures our bike-sharing fleet remains in pristine condition, meticulously maintaining and servicing every bicycle to guarantee safe and reliable transportation for our community.",
@@ -186,7 +186,7 @@ export function TeamSection() {
   };
 
   const getSocialButtonLayout = (
-    socials: Partial<Record<SocialPlatform, string>>
+    socials: Partial<Record<SocialPlatform, string>>,
   ) => {
     const socialEntries = Object.entries(socials) as [SocialPlatform, string][];
     const socialCount = socialEntries.length;
@@ -268,7 +268,7 @@ export function TeamSection() {
                   <div className="mt-auto">
                     <div
                       className={`grid gap-3 ${getSocialButtonLayout(
-                        member.socials
+                        member.socials,
                       )}`}
                     >
                       {Object.entries(member.socials).map(
@@ -295,7 +295,7 @@ export function TeamSection() {
                               </span>
                             </Button>
                           );
-                        }
+                        },
                       )}
                     </div>
                   </div>
