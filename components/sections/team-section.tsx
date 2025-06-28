@@ -287,7 +287,6 @@ export function TeamSection() {
                                 handleSocialClick(platformKey, value)
                               }
                             >
-                              <Icon className="w-4 h-4 mr-2" />
                               <span className="hidden sm:inline">
                                 {config.label}
                               </span>
